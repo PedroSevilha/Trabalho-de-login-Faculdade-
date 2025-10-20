@@ -1,0 +1,41 @@
+body{
+    
+    font-family: Arial, sans-serif; /*Fonte do menu */
+    background-color: #f0f2f5;
+    display: flex; 
+    justify-content: center;
+    align-items: center; /*Centraliza o login*/
+    height: 100vh; /*tela cheia*/
+    margin: 0;
+
+}
+
+h2 {
+
+    margin-bottom: 20px;
+    color: #00000076;
+}
+
+/*Design das box*/
+ input[type="text"],
+ input[type="senha"]{
+
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+
+}
+/*botão*/
+button{
+
+    width: 100%;
+    padding: 10px;
+    background-color: #1e3a8a;
+    color:white; 
+    border: none;
+    border-radius: 5px;       
+}
