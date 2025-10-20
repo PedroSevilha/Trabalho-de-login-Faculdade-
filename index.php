@@ -7,7 +7,7 @@
     
 
 <div class="container">
-<h2>login</h2>
+<h1>login</h1>
 
 <?php
 session_start();
@@ -43,7 +43,7 @@ if(isset($_POST['login'])){
 
 <form method="POST">
     Usuario: <input type="text" name="usuario" requeride><br>
-    Senha: <input type="passoword" name="senha" requride><br>
+    Senha: <input type="password" name="senha" requride><br>
     <button type="submite" name=login>Entrar</button>
 </form>
 
