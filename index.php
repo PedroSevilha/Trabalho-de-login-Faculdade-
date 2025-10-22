@@ -1,10 +1,13 @@
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="CSS/style.css">
     <meta charset="UTF-8">
     <title>Sistem_Login</title>
-   
 
-    
+
+
+</head> 
+<body>
 
 <div class="container">
 <h1>login</h1>
@@ -38,7 +41,6 @@ if(isset($_POST['login'])){
 }
 ?>
 
-//Mostra o erro//
 <?php if(isset($erro)) echo "<p style='color:red;'>$erro</p>"; ?>
 
 <form method="POST">
@@ -49,13 +51,7 @@ if(isset($_POST['login'])){
 
 <p>Não tem uma conta? <a href="cadastro.php">Cadestre-se</a></p>
 
-</div> 
-
-<link rel="stylesheet" href="style.css">
-</head> 
-<body>
-
-    
+</div>     
 
 
 
