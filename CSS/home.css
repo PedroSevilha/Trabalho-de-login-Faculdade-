@@ -1,7 +1,7 @@
 body{
     
     font-family: Arial, sans-serif; /*Fonte do menu */
-    background: linear-gradient(button, black, green, blue);
+    background: linear-gradient(button, black, blue);
     display: flex; 
     justify-content: center;
     align-items: center; /*Centraliza o login*/
