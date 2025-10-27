@@ -17,7 +17,7 @@ h2 {
 }
 
 /*Design das box*/
- input[type="Aprovados"],
+ input[type="POST"],
  input[type="Modificar"],
  input[type="Inseir"]{
 
@@ -59,3 +59,33 @@ a:hover{
     text-decoration: underline;
 
 }
+
+
+/*Desigin top*/
+#topo
+{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+
+
+
+}
+/*botão*/
+#topo{
+    width: auto; /* deixa o botão com largura ajustada */
+    padding: 10px 20px;
+    background-color: #acacac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block; 
+    
+ 
+}
+
+#topo:hover {
+    background: #292b2b;
+}
+

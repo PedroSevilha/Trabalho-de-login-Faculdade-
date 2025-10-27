@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Home</title>
+
 </head>
 <body>
   
@@ -13,14 +14,22 @@
 
 
 ?>
+    
+<div id="topo"class="TOP">
+    <a href="index.php">Incio</a>
+            
+</div> 
 
-<form method="POST">
-    <button type="submite" name=Aprovados>Aprovado</button>
-    <button type="submite" name=Modificar>Modificar</button>
-    <button type="submite" name=Inserir>Inserir</button>
-</form>
 
+<main>
+    <form method="POST">
+        <h1>Bem vindo"Usuario"</h1>
+        <button type="button" onclick="window.location.href='inserir.php'">Inseir_Nota</button>
+        <button type="button" onclick="window.location.href='inserir.php'">Exibir</button>
+        <button type="button" onclick="window.location.href='inserir.php'">Todos</button>
+    </form>
 
+</main>
 
 
 </body>
