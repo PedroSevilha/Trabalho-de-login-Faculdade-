@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, white 50%, transparent 50%),url("imagem/4138210.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: left top, left top;
+    display: flex; 
+    justify-content: flex-end; /* alinhamento à direita */
+    align-items: center; /* mantém verticalmente centralizado */
+    height: 100vh;
+    margin: 0;
+    padding-right: 50px; /* opcional: deixa um espaço da borda */
+}
+
+
+h2 {
+
+    margin-bottom: 20px;
+    color: #00000076;
+}
+
+/*Design das box*/
+ input[type="date"],
+ input[type="text"],
+ input[type="password"]{
+
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+
+
+}
+/*botão*/
+button {
+    width: auto; /* deixa o botão com largura ajustada */
+    padding: 10px 20px;
+    background-color: #2a4180;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block; 
+    margin-left: auto; /* empurra o botão para a direita */
+}
+
+button:hover {
+    background: #292b2b;
+}
+
+
+a{
+    color: #2d2e2e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover{
+
+    text-decoration: underline;
+
+}

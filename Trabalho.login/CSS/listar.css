@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffffe7; /* azul escuro */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(93, 91, 91, 0.3);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #1c2a6a;
+}
+
+th {
+    background-color: #0c1736;
+    color: #c3daf2;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #21232b;
+    transition: 0.2s;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background: #a0a2a5;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.voltar:hover {
+    background: #1b1d25;
+    color: #ffffff;
+}
+
+.btn-apagar {
+    background-color: #1c2a6a;       /* azul escuro principal */
+    color: #ffffff;                  /* texto branco */
+    border: none;                    /* sem borda */
+    padding: 8px 14px;               /* espaço interno */
+    border-radius: 6px;              /* cantos arredondados */
+    font-weight: bold;
+    cursor: pointer;                 
+    transition: 0.3s ease;           /* animação suave */
+}
+
+.btn-apagar:hover {
+    background-color: #0c1736;      
+    transform: scale(1.05);          /* leve aumento no hover */
+}
