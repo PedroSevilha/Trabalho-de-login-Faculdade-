@@ -1,91 +1,143 @@
-body{
-
-    font-family: Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
+/* ======== RESET ======== */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
-header{
+/* ======== BODY ======== */
+body {
+    background-color: #f4f6fb;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-    background-color: #5fbafb;
-    color: white;
+/* ======== HEADER ======== */
+header {
+    background-color: #1c2a4a;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-} 
-
-header h1{
-
-    margin: 0;
-    font-size: 20px;
+    padding: 18px 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.user-link{
+header h1 {
+    font-size: 22px;
+}
+
+.user-link {
     display: flex;
-    gap: 20px;
-
+    gap: 25px;
 }
 
-.user-link a:hover{
-    color: white;
+.user-link a {
+    color: #dcdcdc;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.user-link a:hover{
+.user-link a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 
-main{
-    text-align: center;
-    padding: 80px 20px;
+/* ======== MAIN ======== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
 }
 
-main h2{
-    color: #333;
-    font-size: 28px;
+/* ======== CONTEÚDO PRINCIPAL ======== */
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1100px;
 }
 
-footer{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: fixed;
-    bottom: 0;
-    width: 100%;
+/* ======== TEXTO ======== */
+.text-box {
+    max-width: 500px;
 }
 
-input[type="user-link"],
-input[type="user-link"]
- {
-
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 5px;
-    border: 1px solid #747474;
-    box-sizing: border-box;
-
-
-
+.text-box h2 {
+    font-size: 34px;
+    color: #1c2a4a;
+    margin-bottom: 20px;
 }
-/*botão*/
-button {
-    width: auto; /* deixa o botão com largura ajustada */
-    padding: 10px 20px;
+
+.text-box h2 span {
+    color: #2a4180;
+}
+
+.text-box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* ======== BOTÕES ======== */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn.login {
     background-color: #2a4180;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    display: block; 
-    margin-left: auto; /* empurra o botão para a direita */
+    color: #fff;
 }
 
-button:hover {
-    background: #292b2b;
+.btn.login:hover {
+    background-color: #1c2a4a;
+    transform: translateY(-2px);
 }
 
+.btn.register {
+    background-color: transparent;
+    border: 2px solid #2a4180;
+    color: #2a4180;
+}
+
+.btn.register:hover {
+    background-color: #2a4180;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ======== IMAGEM ======== */
+.image-box img {
+    width: 300px;
+    max-width: 90%;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    background-color: #1c2a4a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: auto;
+}

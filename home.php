@@ -10,26 +10,45 @@
 <body>
   
 <?php
+session_start();
 
+// verifica se o usuário está logado
+if (!isset($_SESSION['usuario'])) {
+    header('Location: index.php');
+    exit;
+}
 
-
+// pega o nome do usuário da sessão
+$usuario = $_SESSION['usuario'];
 ?>
+
     
 <div id="topo"class="TOP">
-    <a href="index.php">Incio</a>
-            
+    <a href="paginain.php">Incio</a>
+    
 </div> 
+
+<div id="topo_es" class="TOP"> 
+    <b href="usuario.php">Usuario</b>
+</div>
 
 
 <main>
     <form method="POST">
-        <h1>Bem vindo"Usuario"</h1>
-        <button type="button" onclick="window.location.href='inserir.php'">Inseir_Nota</button>
-        <button type="button" onclick="window.location.href='inserir.php'">Exibir</button>
-        <button type="button" onclick="window.location.href='inserir.php'">Todos</button>
-    </form>
+        <h1>Bem-vindo, <b><?php echo htmlspecialchars($usuario); ?></b></h1>
 
+        <button type="button" onclick="window.location.href='inserir.php'">
+            <img src="imagens/add.png" alt="Inserir Nota">
+            Inserir Nota
+        </button>
+
+        <button type="button" onclick="window.location.href='exibir.php'">
+            <img src="imagens/list.png" alt="Exibir Notas">
+            Exibir Notas
+        </button>
+    </form>
 </main>
+
 
 
 </body>

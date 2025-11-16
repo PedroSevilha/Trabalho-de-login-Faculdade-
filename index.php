@@ -15,31 +15,37 @@
 <?php
 session_start();
 
-if(isset($_POST['login'])){
-    $usario = $_POST['usuario'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
 
-    $usarios =file("usuarios.txt", FILE_IGNORE_NEW_LINES);
+    $arquivo = file("usurios.txt", FILE_IGNORE_NEW_LINES); // Cnsulta o arquivo e ignora novas linhas
 
-    $achou = false;
-    foreach($usarios as $linha){
-        list($u, $s) = explode(",", $linha);
-        if($u === $usuario && $s === $senha){
-            $achou = true;
-            $_SESSION['usuario'] = $usario;
-            header("Localização: Bem vindo");
-            exit;
+    $loginvalido = false;
+
+    foreach ($arquivo as $linha) {
+        list($user, $pass) = explode(",", $linha);
+        if ($usuario === $user && $senha === $pass) {
+            $loginvalido = true;
+            $_SESSION['usuario'] = $usuario; // guarda o usuário logado
+            break;
         }
-
-
     }
 
-    if(!$achou){
-        $erro = "Usuario ou senha incorreta";
+    if ($loginvalido) {
+        $_SESSION['usuario'] = $usuario;//Salva o nome do usuario
+        // Redireciona para outra págin
+        header('Location: home.php');
+        exit; // para o script aqui
+    } else {
+        echo "<p style='color:red;'>Usuário ou senha incorretos.</p>";
     }
-
 }
+
+
 ?>
+
+
 
 <?php if(isset($erro)) echo "<p style='color:red;'>$erro</p>"; ?>
 

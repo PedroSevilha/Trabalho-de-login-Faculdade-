@@ -15,12 +15,22 @@
 
 <div class="container">
 
- 
- <?php
-if(isset($erro)) echo "<p style='color:red;'>$erro</p>";
-if(isset($sucesso))echo "<p style='color:green;'>$sucesso</p>";
+    <?php
+        $usurio = $_POST['usuario'];
+        $senha = $_POST['senha'];
+        
+        $linha = $usurio . "," . $senha . "\n";
 
-?>
+        $arquivo = "usurios.txt";
+        
+        file_put_contents($arquivo, $linha, FILE_APPEND);
+
+
+
+
+        echo "Cadastro realizado";
+
+    ?>
 
 <form method="POST" action="">
     <h1>Cadastro</h1>

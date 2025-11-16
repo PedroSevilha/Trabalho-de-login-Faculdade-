@@ -1,91 +1,94 @@
-body{
-    
-    font-family: Arial, sans-serif; /*Fonte do menu */
-    background: linear-gradient(button, black, blue);
-    display: flex; 
-    justify-content: center;
-    align-items: center; /*Centraliza o login*/
-    height: 100vh; /*tela cheia*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1c2e, #243b55);
+    color: white;
     margin: 0;
-
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h2 {
-
-    margin-bottom: 35px;
-    color: #00000076;
-}
-
-/*Design das box*/
- input[type="POST"],
- input[type="Modificar"],
- input[type="Inseir"]{
-
-    width: 100%;
-    padding: 35px;
-    margin: 8px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: content-box;
-
-
-}
-/*botão*/
-button{
-    margin: 10px;
-    width: 100%;
-    padding: 10px;
-    background-color: #2a4180;
-    color:white; 
-    border: none;
-    border-radius: 10px;       
-}
-
-button:hover{
-
-    background: #292b2b;
-
-
-}
-
-a{
-    color: #2d2e2e;
-    text-decoration: none;
+/* Topo */
+#topo, #topo_es {
+    position: fixed;
+    top: 15px;
+    background-color: #ffffff20;
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
     font-weight: 500;
 }
 
-a:hover{
-
-    text-decoration: underline;
-
+#topo {
+    left: 15px;
 }
 
-
-/*Desigin top*/
-#topo
-{
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-
-
-
+#topo_es {
+    right: 15px;
 }
-/*botão*/
-#topo{
-    width: auto; /* deixa o botão com largura ajustada */
-    padding: 10px 20px;
-    background-color: #acacac;
+
+#topo:hover, #topo_es:hover {
+    background-color: #2a4180;
+    cursor: pointer;
+}
+
+/* Área principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Container dos botões (cards) */
+form {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Cada card */
+button {
+    background: #2a4180;
     color: white;
     border: none;
-    border-radius: 5px;
-    display: block; 
-    
- 
+    border-radius: 16px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-#topo:hover {
-    background: #292b2b;
+button img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #1e2a58;
+}
+
+button:hover img {
+    opacity: 1;
 }
 
